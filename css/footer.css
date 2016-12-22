@@ -1,0 +1,39 @@
+footer {
+    text-align: center;
+}
+
+.footer-menu {
+    margin-top: 5px;
+}
+
+.footer-menu-item {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.footer-menu-link {
+    color: #999;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:active {
+    color: #000000;
+}
+.footer-menu-link:visited {
+    color: #6b5050;
+}
+
+.copyright {
+    padding-top: 12px;
+    color: #999;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.copyright-author {
+    color: #3998f5;
+}
+.copyright-author:hover {
+    color: #555;
+}

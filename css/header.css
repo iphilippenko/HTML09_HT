@@ -1,0 +1,90 @@
+
+.header-logo {
+    display: block;
+    float: right;
+}
+
+.sr-only {
+    display: none;
+}
+
+.menu-btn-container {
+    float: left;
+}
+
+.menu-btn-container {
+    padding-top: 10px;
+    transform: translate(0px, 0px);
+    transition: 0.30s ease;
+}
+
+.menu-btn-container.active {
+    transform: translate(200px, 0px);
+}
+
+.menu-btn {
+    width: 30px;
+    height: 20px;
+    display: block;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+}
+
+.menu-btn:after {
+    content: "Menu";
+    margin-left: 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 0.95em;
+}
+
+.menu-btn span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    transform-origin: left center;
+}
+
+.menu-btn span:nth-child(1) {
+    top: 0;
+}
+
+.menu-btn span:nth-child(2) {
+    top: 8px;
+}
+
+.menu-btn span:nth-child(3) {
+    top: 16px;
+}
+
+.active .menu-btn span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+.active .menu-btn span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+.active .menu-btn span:nth-child(2) {
+    width: 0;
+    opacity: 0;
+}
+.active .menu-btn span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 19px;
+    left: 8px;
+}

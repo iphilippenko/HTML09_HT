@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Launchpad</title>
+        <meta name="description" content="My awesome launchpad site">
+        <meta name="keywords" content="launchpad, cms">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            /*! modernizr 3.3.1 (Custom Build) | MIT *
+             * https://modernizr.com/download/?-geolocation-touchevents-setclasses !*/
+            !function(e,n,o){function t(e,n){return typeof e===n}function s(){var e,n,o,s,a,i,r;for(var l in c)if(c.hasOwnProperty(l)){if(e=[],n=c[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(o=0;o<n.options.aliases.length;o++)e.push(n.options.aliases[o].toLowerCase());for(s=t(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],r=i.split("."),1===r.length?Modernizr[r[0]]=s:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=s),f.push((s?"":"no-")+r.join("-"))}}function a(e){var n=u.className,o=Modernizr._config.classPrefix||"";if(p&&(n=n.baseVal),Modernizr._config.enableJSClass){var t=new RegExp("(^|\\s)"+o+"no-js(\\s|$)");n=n.replace(t,"$1"+o+"js$2")}Modernizr._config.enableClasses&&(n+=" "+o+e.join(" "+o),p?u.className.baseVal=n:u.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):p?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function r(){var e=n.body;return e||(e=i(p?"svg":"body"),e.fake=!0),e}function l(e,o,t,s){var a,l,f,c,d="modernizr",p=i("div"),h=r();if(parseInt(t,10))for(;t--;)f=i("div"),f.id=s?s[t]:d+(t+1),p.appendChild(f);return a=i("style"),a.type="text/css",a.id="s"+d,(h.fake?h:p).appendChild(a),h.appendChild(p),a.styleSheet?a.styleSheet.cssText=e:a.appendChild(n.createTextNode(e)),p.id=d,h.fake&&(h.style.background="",h.style.overflow="hidden",c=u.style.overflow,u.style.overflow="hidden",u.appendChild(h)),l=o(p,e),h.fake?(h.parentNode.removeChild(h),u.style.overflow=c,u.offsetHeight):p.parentNode.removeChild(p),!!l}var f=[],c=[],d={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var o=this;setTimeout(function(){n(o[e])},0)},addTest:function(e,n,o){c.push({name:e,fn:n,options:o})},addAsyncTest:function(e){c.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=d,Modernizr=new Modernizr;var u=n.documentElement,p="svg"===u.nodeName.toLowerCase(),h=d._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];d._prefixes=h;var m=d.testStyles=l;Modernizr.addTest("touchevents",function(){var o;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)o=!0;else{var t=["@media (",h.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");m(t,function(e){o=9===e.offsetTop})}return o}),Modernizr.addTest("geolocation","geolocation"in navigator),s(),a(f),delete d.addTest,delete d.addAsyncTest;for(var v=0;v<Modernizr._q.length;v++)Modernizr._q[v]();e.Modernizr=Modernizr}(window,document);
+        </script>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favico/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favico/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="favico/manifest.json">
+        <meta name="theme-color" content="#ffffff">
+        <link href="http://allfont.ru/allfont.css?fonts=amble-light" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main-menu.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/features.css">
+        <link rel="stylesheet" href="css/plans.css">
+        <link rel="stylesheet" href="css/customers.css">
+        <link rel="stylesheet" href="css/socials.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browser-upgrade">
+                You are using an <strong>outdated</strong> browser.
+                Please <a href="http://browsehappy.com/">upgrade your browser</a>
+                to improve your experience.
+            </p>
+        <![endif]-->
+
+        <noscript>No JS. Please, enable JavaScript in your browser settings.</noscript>
+
+        <header>
+            <div class="wrap">
+                <h1 class="header-logo">
+                    <a href="/" title="Launchpad site">
+                        <img class="logo" src="images/logo.png" alt="Launchpad site">
+                        <span class="sr-only">
+                    Launchpad site
+                </span>
+                    </a>
+                </h1>
+
+                <div class="menu-btn-container" id="menu-btn-container">
+                    <a href="#" class="menu-btn" id="menu-toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- left floating menu -->
+        <nav class="menu" id="menu">
+            <div class="menu-close-btn" id="menu-close-btn">
+                <a href="#">
+                    <img src="images/close.png">
+                </a>
+            </div>
+
+            <ul class="main-nav">
+                <li class="main-nav-item menu-item">
+                    <a href="#tour" class="main-nav-item-link menu-item-link">
+                        Tour
+                    </a>
+                </li>
+                <li class="main-nav-item menu-item">
+                    <a href="#features" class="main-nav-item-link menu-item-link">
+                        Features
+                    </a>
+                </li>
+                <li class="main-nav-item menu-item">
+                    <a href="#pricing" class="main-nav-item-link menu-item-link">
+                        Pricing
+                    </a>
+                </li>
+                <li class="main-nav-item menu-item">
+                    <a href="#support" class="main-nav-item-link menu-item-link">
+                        Support
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <section class="intro-section section">
+                <div class="wrap">
+                    <h2 class="intro-section-title section-title">Introducing <strong class="intro-section__title_strong">Paypaul</strong></h2>
+                    <h3 class="intro-section-subtitle section-subtitle">A revolutionary e-commerce Platform</h3>
+                    <img src="images/banner.png" alt="banner" class="section__banner">
+                    <h4 class="section-appeal intro-section-appeal">Take it for a spin <b>today!</b></h4>
+                    <div class="button-wrap secondary-button-wrap">
+                        <a href="#" class="button-link secondary-button-link">Free download
+                            <img src="images/arrow.png" class="button-image secondary-button-image" alt="download">
+                        </a>
+                    </div>
+                    <p class="intro-section-available">
+                        Available for
+                        <span class="intro-section-available_os">Mac, Windows, ios</span>
+                        and
+                        <span class="intro-section-available_os">Android</span>
+                    </p>
+                </div>
+            </section>
+            <section class="features-section section">
+                <div class="wrap">
+                    <h2 class="section-title features-section-title">Newly added
+                        <b>features</b>
+                    </h2>
+                    <div class="feature">
+
+                        <img src="images/feature-banner.jpg" class="feature-banner">
+                        <div class="feature-item">
+                            <h6 class="feature-title">
+                                <img src="images/money.png" title="money">
+                                New payment option</h6>
+                            <p class="feature-specification">Now you can add Debi, Visa, Mastercard, Amex, and more.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h6 class="feature-title">
+                                <img src="images/safety01.png" title="security">
+                                Increase security</h6>
+                            <p class="feature-specification">Protecting your data from predators in our top priority.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h6 class="feature-title">
+                                <img src="images/iphone.png" title="iphone">
+                                Mobile ready</h6>
+                            <p class="feature-specification">Download and use our app on your favourite mobile device.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h6 class="feature-title">
+                                <img src="images/settings.png" title="setting">
+                                Customizable widgets</h6>
+                            <p class="feature-specification">Keep an eye sales, reviews, and general store performance.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h6 class="feature-title">
+                                <img src="images/like.png" title="like">
+                                Intuitive web design</h6>
+                            <p class="feature-specification">We redesigned and re-build the under interface from inside out.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="prices-section section">
+                <div class="wrap">
+                    <h2 class="section-title prices-section-title">Pricing
+                        <b>table</b>
+                    </h2>
+                    <div>
+                        <ul class="plans">
+                            <li class="plan-item">
+                                <h3 class="plan-title">Plan 1</h3>
+                                <ul class="plan-list">
+                                    <li>
+                                        <p class="plan-price">$10<span class="plan-price_month">/month</span></p>
+                                    </li>
+                                    <li>
+                                        <ul class="plan-options">
+                                            <li class="plan-option">2x <span>option 1</span></li>
+                                            <li class="plan-option">Free <span>option 2</span></li>
+                                            <li class="plan-option">Unlimited <span>option 3</span></li>
+                                            <li class="plan-option">Unlimited <span>option 4</span></li>
+                                            <li class="plan-option">1x <span>option 5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="button-wrap primary-button-wrap">
+                                    <a href="#" class="button-link primary-button-link">Purchase</a>
+                                </div>
+                            </li>
+                            <li  class="plan-item plan-item_middle">
+                                <h3 class="plan-title plan-title_middle">Plan 2</h3>
+                                <ul class="plan-list">
+                                    <li>
+                                        <p class="plan-price plan-price_middle">$20<span class="plan-price_month">/month</span></p>
+                                    </li>
+                                    <li>
+                                        <ul class="plan-options">
+                                            <li class="plan-option">2x <span>option 1</span></li>
+                                            <li class="plan-option">Free <span>option 2</span></li>
+                                            <li class="plan-option">Unlimited <span>option 3</span></li>
+                                            <li class="plan-option">Unlimited <span>option 4</span></li>
+                                            <li class="plan-option">1x <span>option 5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="button-wrap primary-button-wrap primary-button-wrap_middle">
+                                    <a href="#" class="button-link primary-button-link primary-button-link_middle">Purchase</a>
+                                </div>
+                            </li>
+                            <li  class="plan-item">
+                                <h3 class="plan-title">Plan 3</h3>
+                                <ul class="plan-list">
+                                    <li>
+                                        <p class="plan-price">$30<span class="plan-price_month">/month</span></p>
+                                    </li>
+                                    <li>
+                                        <ul class="plan-options">
+                                            <li class="plan-option">2x <span>option 1</span></li>
+                                            <li class="plan-option">Free <span>option 2</span></li>
+                                            <li class="plan-option">Unlimited <span>option 3</span></li>
+                                            <li class="plan-option">Unlimited <span>option 4</span></li>
+                                            <li class="plan-option">1x <span>option 5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="button-wrap primary-button-wrap">
+                                    <a href="#" class="button-link primary-button-link">Purchase</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="support__section section">
+                <div class="wrap">
+                    <h2 class="section-title support-section-title">Our Customers <b>love it!</b></h2>
+                    <ul class="grid">
+                        <li class="grid-item">
+                            <figure>
+                                <a href="#">
+                                    <img src="images/t-pic.jpg"  class="grid-item-image" alt="designer">
+                                </a>
+                                <figcaption>
+                                    <a href="#" class="link">
+                                        <h4 class="grid-item-title">Lorem Ipsum</h4>
+                                    </a>
+                                    <p class="grid-item-specification">Designer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="grid-item">
+                            <figure>
+                                <a href="#">
+                                    <img class="grid-item-image" src="images/t-pic1.jpg" alt="Marketing Expert">
+                                </a>
+                                <figcaption>
+                                    <a href="#" class="link">
+                                        <h4 class="grid-item-title">Lorem Ipsum</h4>
+                                    </a>
+                                    <p class="grid-item-specification">Marketing Expert</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="grid-item">
+                            <figure>
+                                <a href="#">
+                                    <img src="images/t-pic2.jpg"  class="grid-item-image" alt="Photographer">
+                                </a>
+                                <figcaption>
+                                    <a href="#" class="link">
+                                        <h4 class="grid-item-title">Lorem Ipsum</h4>
+                                    </a>
+                                    <p class="grid-item-specification">Photographer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="grid-item">
+                            <figure>
+                                <a href="#">
+                                    <img src="images/t-pic3.jpg" class="grid-item-image" alt="model">
+                                </a>
+                                <figcaption>
+                                    <a href="#"  class="link">
+                                        <h4 class="grid-item-title">Lorem Ipsum</h4>
+                                    </a>
+                                    <p class="grid-item-specification">Professional model</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="sharing">
+                <div class="wrap">
+                    <h5 class="section-title sharing-section-title">Help us spread the world</h5>
+                    <div class="sharing-social">
+                        <ul>
+                            <li class="social-item sharing-social_twitter">
+                                <a href="#"></a>
+                            </li>
+                            <li class="social-item sharing-social_facebook">
+                                <a href="#"></a>
+                            </li>
+                            <li class="social-item sharing-social_google-plus">
+                                <a href="#"></a>
+                            </li>
+                            <li class="social-item sharing-social_pinterest">
+                                <a href="#"></a>
+                            </li>
+                            <li class="social-item sharing-social_linkedin">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <div class="wrap">
+                <div  class="footer-menu">
+                    <ul>
+                        <li class="footer-menu-item">
+                            <a  class="footer-menu-link" href="#">About</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Careers</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Press & Media</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <small class="copyright footer-copyright">
+                    © 2013 Launchpad. All Rights Reserved | Designed by
+                    <a href="#" class="copyright-author">w3layots</a>
+                </small>
+            </div>
+        </footer>
+
+        <script src="js/menu-toggle.js"></script>
+    </body>
+</html>

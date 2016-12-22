@@ -1,0 +1,46 @@
+.social-item {
+    background: url(../images/img-sprite.png);
+    height: 42px;
+    width: 42px;
+    display: inline-block;
+    text-indent: -9999px;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.sharing-social {
+    margin-top: 1em;
+    border-bottom: 2px solid #aaa;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.sharing-social_twitter {
+    background-position: 0 top;
+}
+.sharing-social_twitter:hover {
+    background-position: 0 bottom;
+}
+.sharing-social_facebook {
+    background-position: -55px top;
+}
+.sharing-social_facebook:hover {
+    background-position: -55px bottom;
+}
+.sharing-social_google-plus {
+    background-position: -111px top;
+}
+.sharing-social_google-plus:hover {
+    background-position: -111px bottom;
+}
+.sharing-social_facebook {
+    background-position: -168px top;
+}
+.sharing-social_facebook:hover {
+    background-position: -168px bottom;
+}
+.sharing-social_facebook {
+    background-position: -225px top;
+}
+.sharing-social_facebook:hover {
+    background-position: -225px bottom;
+}

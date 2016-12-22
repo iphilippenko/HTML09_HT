@@ -1,0 +1,26 @@
+.feature {
+    margin: 0 auto;
+}
+
+.feature-title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+.feature-specification {
+    font-family: 'Amble Light', arial, sans-serif;
+    font-size: 1em;
+}
+
+.feature-item {
+    width: 80%;
+    margin-top: 1em;
+    text-align: justify;
+}
+
+.feature-item img {
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
