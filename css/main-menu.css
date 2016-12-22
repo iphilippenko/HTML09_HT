@@ -39,6 +39,20 @@
     clear: both;
 }
 
+@media (min-width: 580px) {
+    .menu-close-btn {
+        display: none;
+    }
+    .menu {
+        width: 260px;
+        left: -260px;
+        transform: translate(0px, 0px);
+        font-size: 1.5em;
+    }
+    .menu.active {
+        transform: translate(260px, 0px);
+    }
+}
 
 
 

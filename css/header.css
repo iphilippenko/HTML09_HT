@@ -88,3 +88,10 @@
     top: 19px;
     left: 8px;
 }
+
+@media(min-width: 580px) {
+    .menu-btn-container.active {
+        transform: translate(260px, 0px);
+    }
+}
+

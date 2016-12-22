@@ -32,3 +32,27 @@
     line-height: 1.5em;
     color: #333;
 }
+
+@media(min-width: 580px) {
+    .grid-item {
+        width: 45%;
+        float: left;
+    }
+}
+
+@media(min-width: 800px) {
+    .grid-item {
+        width: 22.8%;
+        margin: 1% 0 1% 2.8%;
+    }
+
+    .grid-item:nth-child(1) {
+        margin-left: 0;
+    }
+}
+
+@media(min-width: 1024px) {
+    .grid-item-title, .grid-item-specification {
+        font-size: 1.5em;
+    }
+}

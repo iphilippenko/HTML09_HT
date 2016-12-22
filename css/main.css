@@ -67,3 +67,39 @@ b, strong, span, a, small {
 .features-section-title {
     margin-bottom: 1.5em;
 }
+
+@media (min-width: 580px) {
+    .section-title {
+        font-size: 2.5em;
+    }
+    .intro-section-subtitle {
+        font-size: 1.5em;
+        margin: .5em 0;
+    }
+    .intro-section-appeal {
+        font-size: 1.5em;
+    }
+    .intro-section-available {
+        margin-bottom: 1.5em;
+        font-size: 1.2em;
+    }
+}
+
+@media(min-width: 800px) {
+    .section-title {
+        font-size: 3em;
+    }
+}
+
+@media(min-width: 1024px) {
+    .section-title {
+        font-size: 4em;
+    }
+
+    .intro-section-appeal {
+        font-size: 1.7em;
+    }
+    .intro-section-available {
+        font-size: 1.5em;
+    }
+}

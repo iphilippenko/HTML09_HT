@@ -37,3 +37,16 @@ footer {
 .copyright-author:hover {
     color: #555;
 }
+
+@media(min-width: 1024px) {
+    .copyright {
+        margin-top: 5px;
+        float: right;
+    }
+
+    .footer-menu {
+        margin-top: 5px;
+        float: left;
+    }
+
+}

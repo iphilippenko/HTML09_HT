@@ -1,5 +1,6 @@
 .feature {
     margin: 0 auto;
+    width: 90%;
 }
 
 .feature-title {
@@ -14,13 +15,37 @@
 }
 
 .feature-item {
-    width: 80%;
-    margin-top: 1em;
+    width: 100%;
+    max-width: 440px;
+    margin: 1em auto 1em;
     text-align: justify;
 }
 
 .feature-item img {
     vertical-align: middle;
     margin-bottom: 0;
+}
+
+.feature:last-child {
+    margin-bottom: 1.5em;
+}
+
+@media (min-width: 580px) {
+    .feature-title {
+        font-size: 1.7em;
+    }
+    .feature-specification {
+        font-size: 1.3em;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .feature-title {
+        font-size: 2em;
+    }
+    .feature-specification {
+        font-size: 1.5em;
+    }
 }
 

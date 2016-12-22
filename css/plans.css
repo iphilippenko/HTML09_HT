@@ -25,6 +25,7 @@
 .plan-price {
     background-color: #202020;
     color: #fff;
+    font-size: 1em;
     line-height: 2.5em;
     margin-bottom: 1em;
 }
@@ -45,3 +46,30 @@
     font-family: 'Amble Light', arial, sans-serif;
     color: #333;
 }
+
+@media (min-width: 800px) {
+
+    .plan-item {
+        display: inline-block;
+        width: 26%;
+        margin: 0 3.333% 20px 0;
+    }
+
+    .plans:last-child {
+        margin-right: 0;
+    }
+
+    .plan-title {
+        font-size: 2em;
+    }
+
+    .plan-option {
+        font-size: 1.2em;
+        line-height: 3;
+    }
+
+    .plan-price {
+        font-size: 1.5em;
+    }
+}
+
